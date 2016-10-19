@@ -5,7 +5,7 @@ sudo docker stop php-app
 sudo docker rm php-app
 set -e
 
-sudo cp -f ~/appfiles ./docker/php-app/
+sudo cp -rf ~/appfiles ./docker/php-app/
 sudo rm -rf ./php-app/appfiles/.git
 
 #builds a new mysql database image
