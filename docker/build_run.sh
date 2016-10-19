@@ -14,4 +14,4 @@ pushd ~/config/docker/php-app
 docker build --tag php-app:latest .
 popd
 
-sudo docker run --name devops-db -p 80:80 -d php-app:latest
+sudo docker run --name php-app -p 80:80 -d php-app:latest
