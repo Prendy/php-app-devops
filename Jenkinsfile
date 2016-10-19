@@ -1,7 +1,8 @@
 #!groovy
 
-stage "Database build"
+stage('Database build'){
 
-node(Database) {
-  build job: DB-build
+  node('Database') {
+    build job: 'DB-build'
+  }
 }
