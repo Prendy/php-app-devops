@@ -5,7 +5,7 @@ sudo docker stop php-app
 sudo docker rm php-app
 set -e
 
-sudo cp -r ~/appfiles/files ./docker/php-app/
+sudo cp -rf ~/appfiles/files ~/config/docker/php-app/
 sudo rm -rf ./php-app/appfiles/.git
 
 #builds a new php image
