@@ -1,5 +1,3 @@
 stage 'Database build'
 
-node('Database') {
-    build 'DB-build'
-}
+build 'DB-build'
