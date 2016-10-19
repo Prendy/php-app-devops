@@ -8,7 +8,7 @@ set -e
 sudo cp -r ~/appfiles/files ./docker/php-app/
 sudo rm -rf ./php-app/appfiles/.git
 
-#builds a new mysql database image
+#builds a new php image
 
 pushd ~/config/docker/php-app
 docker build --tag php-app:latest .
